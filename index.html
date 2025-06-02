@@ -1,12 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- 
+    ████████████████████████████████████████████████████████████████████████████████
+    █                                                                              █
+    █                    TEMPLATE DESIGNED & DEVELOPED BY ANGIE WEB STUDIO         █
+    █                      Professional Web Design & Development Services          █
+    █                           © 2025 Angie Web Studio. All Rights Reserved.      █
+    █                                                                              █
+    █            This template is licensed for use by the purchasing client only.  █
+    █         Redistribution, resale, or unauthorized use is strictly prohibited.  █
+    █                                                                              █
+    ████████████████████████████████████████████████████████████████████████████████
+    -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Harmony Festival 2025 - Community Music & Arts Celebration</title>
+    <!-- CUSTOMIZE: Update title for your event -->
+    <title>Your Event Name 2025 - Community Celebration</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    
     <style>
+        /* =================================================================
+           CSS VARIABLES - CUSTOMIZE THESE TO MATCH YOUR BRAND
+           ================================================================= */
         :root {
+            /* Primary Colors - Change these to match your brand */
             --primary-red: #c41e3a;
             --navy-blue: #1e3a5f;
             --golden-yellow: #f4b942;
@@ -15,6 +33,19 @@
             --white: #ffffff;
             --text-dark: #333333;
             --text-light: #666666;
+            
+            /* Typography */
+            --font-family-heading: 'Poppins', sans-serif;
+            --font-family-body: 'Lato', sans-serif;
+            
+            /* Spacing */
+            --section-padding: 5rem 0;
+            --container-padding: 0 20px;
+            --border-radius: 15px;
+            
+            /* Effects */
+            --box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            --transition: all 0.3s ease;
         }
 
         * {
@@ -24,7 +55,7 @@
         }
 
         body {
-            font-family: 'Lato', sans-serif;
+            font-family: var(--font-family-body);
             line-height: 1.6;
             color: var(--text-dark);
             overflow-x: hidden;
@@ -33,30 +64,14 @@
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 20px;
+            padding: var(--container-padding);
         }
 
-        /* Watermark */
-        .watermark {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            z-index: 9999;
-            opacity: 0.03;
-            font-family: 'Courier New', monospace;
-            font-size: 8px;
-            line-height: 1.2;
-            white-space: pre;
-            overflow: hidden;
-            color: var(--charcoal);
-            padding: 20px;
-        }
-
-        /* Hero Section */
+        /* =================================================================
+           HERO SECTION - CUSTOMIZE BACKGROUND IMAGE AND CONTENT
+           ================================================================= */
         .hero {
+            /* CUSTOMIZE: Replace with your event image URL */
             background-image: url('https://images.unsplash.com/photo-1459749411175-04bf5292ceea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
             background-size: cover;
             background-position: center;
@@ -88,7 +103,7 @@
         }
 
         .hero h1 {
-            font-family: 'Poppins', sans-serif;
+            font-family: var(--font-family-heading);
             font-size: clamp(2.5rem, 5vw, 4rem);
             font-weight: 800;
             margin-bottom: 1rem;
@@ -102,17 +117,20 @@
             opacity: 0.9;
         }
 
+        /* =================================================================
+           COUNTDOWN TIMER - CUSTOMIZE DATE IN JAVASCRIPT SECTION
+           ================================================================= */
         .countdown {
             background: rgba(255,255,255,0.1);
             backdrop-filter: blur(10px);
-            border-radius: 15px;
+            border-radius: var(--border-radius);
             padding: 2rem;
             margin: 2rem 0;
             border: 1px solid rgba(255,255,255,0.2);
         }
 
         .countdown h3 {
-            font-family: 'Poppins', sans-serif;
+            font-family: var(--font-family-heading);
             font-size: 1.2rem;
             margin-bottom: 1rem;
             color: var(--golden-yellow);
@@ -130,7 +148,7 @@
         }
 
         .countdown-number {
-            font-family: 'Poppins', sans-serif;
+            font-family: var(--font-family-heading);
             font-size: 2.5rem;
             font-weight: 700;
             display: block;
@@ -153,7 +171,7 @@
             font-weight: 700;
             text-decoration: none;
             border-radius: 50px;
-            transition: all 0.3s ease;
+            transition: var(--transition);
             box-shadow: 0 8px 25px rgba(244, 185, 66, 0.3);
             border: none;
             cursor: pointer;
@@ -168,13 +186,15 @@
             box-shadow: 0 12px 35px rgba(244, 185, 66, 0.4);
         }
 
-        /* Sections */
+        /* =================================================================
+           SECTIONS
+           ================================================================= */
         .section {
-            padding: 5rem 0;
+            padding: var(--section-padding);
         }
 
         .section-title {
-            font-family: 'Poppins', sans-serif;
+            font-family: var(--font-family-heading);
             font-size: clamp(2rem, 4vw, 3rem);
             font-weight: 700;
             text-align: center;
@@ -182,7 +202,9 @@
             color: var(--navy-blue);
         }
 
-        /* Description Section */
+        /* =================================================================
+           DESCRIPTION SECTION - CUSTOMIZE TEXT AND IMAGE
+           ================================================================= */
         .description {
             background: var(--light-gray);
         }
@@ -203,10 +225,11 @@
         .description-image {
             width: 100%;
             height: 300px;
+            /* CUSTOMIZE: Replace with your event image URL */
             background-image: url('https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
             background-size: cover;
             background-position: center;
-            border-radius: 15px;
+            border-radius: var(--border-radius);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -223,7 +246,7 @@
             right: 0;
             bottom: 0;
             background: rgba(44, 44, 44, 0.4);
-            border-radius: 15px;
+            border-radius: var(--border-radius);
         }
 
         .description-image span {
@@ -231,7 +254,9 @@
             z-index: 2;
         }
 
-        /* Schedule Section */
+        /* =================================================================
+           SCHEDULE SECTION - CUSTOMIZE EVENTS AND TIMES
+           ================================================================= */
         .schedule {
             background: var(--white);
         }
@@ -246,8 +271,8 @@
         .schedule-item {
             background: var(--white);
             padding: 2rem;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
             border-left: 5px solid var(--primary-red);
             transition: transform 0.3s ease;
             position: relative;
@@ -267,6 +292,7 @@
             border: 3px solid var(--golden-yellow);
         }
 
+        /* CUSTOMIZE: Replace these background images with your event-specific images */
         .schedule-item:nth-child(1) .schedule-icon {
             background-image: url('https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80');
         }
@@ -292,7 +318,7 @@
         }
 
         .schedule-time {
-            font-family: 'Poppins', sans-serif;
+            font-family: var(--font-family-heading);
             font-size: 1.5rem;
             font-weight: 700;
             color: var(--primary-red);
@@ -310,7 +336,9 @@
             color: var(--text-light);
         }
 
-        /* RSVP Form Section */
+        /* =================================================================
+           RSVP FORM SECTION
+           ================================================================= */
         .rsvp {
             background: var(--navy-blue);
             color: var(--white);
@@ -342,18 +370,26 @@
         }
 
         .form-group input,
-        .form-group select {
+        .form-group select,
+        .form-group textarea {
             width: 100%;
             padding: 1rem;
             border: none;
             border-radius: 10px;
             background: rgba(255,255,255,0.9);
             font-size: 1rem;
-            transition: all 0.3s ease;
+            transition: var(--transition);
+            font-family: var(--font-family-body);
+        }
+
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
         }
 
         .form-group input:focus,
-        .form-group select:focus {
+        .form-group select:focus,
+        .form-group textarea:focus {
             outline: none;
             background: var(--white);
             box-shadow: 0 0 20px rgba(244, 185, 66, 0.3);
@@ -365,7 +401,19 @@
             gap: 1rem;
         }
 
-        /* Map Section */
+        .success-message {
+            background: rgba(76, 175, 80, 0.9);
+            color: white;
+            padding: 1rem;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+            text-align: center;
+            display: none;
+        }
+
+        /* =================================================================
+           MAP SECTION - CUSTOMIZE LOCATION DETAILS
+           ================================================================= */
         .map-section {
             background: var(--light-gray);
         }
@@ -382,7 +430,7 @@
         }
 
         .map-info h3 {
-            font-family: 'Poppins', sans-serif;
+            font-family: var(--font-family-heading);
             font-size: 1.5rem;
             color: var(--navy-blue);
             margin-bottom: 1rem;
@@ -398,11 +446,13 @@
         .map-placeholder {
             width: 100%;
             height: 300px;
-            border-radius: 15px;
+            border-radius: var(--border-radius);
             border: none;
         }
 
-        /* Footer */
+        /* =================================================================
+           FOOTER - CUSTOMIZE BUSINESS NAME AND LINKS
+           ================================================================= */
         .footer {
             background: var(--charcoal);
             color: var(--white);
@@ -432,7 +482,9 @@
             opacity: 0.8;
         }
 
-        /* Responsive Design */
+        /* =================================================================
+           RESPONSIVE DESIGN
+           ================================================================= */
         @media (max-width: 768px) {
             .description-content,
             .map-content {
@@ -464,12 +516,31 @@
             }
         }
 
-        /* Smooth scrolling */
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 1rem;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .countdown-timer {
+                gap: 0.5rem;
+            }
+            
+            .rsvp-form {
+                padding: 2rem;
+            }
+        }
+
+        /* =================================================================
+           ANIMATIONS AND EFFECTS
+           ================================================================= */
         html {
             scroll-behavior: smooth;
         }
 
-        /* Animation for countdown */
         @keyframes pulse {
             0% { transform: scale(1); }
             50% { transform: scale(1.05); }
@@ -479,140 +550,174 @@
         .countdown-number {
             animation: pulse 2s infinite;
         }
+
+        /* Fade-in animation for sections */
+        .section {
+            opacity: 0;
+            animation: fadeIn 1s ease-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .section:nth-child(1) { animation-delay: 0s; }
+        .section:nth-child(2) { animation-delay: 0.2s; }
+        .section:nth-child(3) { animation-delay: 0.4s; }
+        .section:nth-child(4) { animation-delay: 0.6s; }
+        .section:nth-child(5) { animation-delay: 0.8s; }
     </style>
 </head>
 <body>
-    <!-- Watermark -->
-    <div class="watermark">
-████████████████████████████████████████████████████████████████████████████████
-█                                                                              █
-█                    TEMPLATE DESIGNED & DEVELOPED BY ANGIE WEB STUDIO         █
-█                      Professional Web Design & Development Services          █
-█                           © 2025 Angie Web Studio. All Rights Reserved.      █
-█                                                                              █
-█            This template is licensed for use by the purchasing client only.  █
-█         Redistribution, resale, or unauthorized use is strictly prohibited.  █
-█                                                                              █
-████████████████████████████████████████████████████████████████████████████████
-</div>
-
-    <!-- Hero Section -->
+    <!-- =================================================================
+         HERO SECTION
+         CUSTOMIZE: Event title, subtitle, and CTA button text
+         ================================================================= -->
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1>Join Us for Harmony Festival 2025</h1>
-                <p class="hero-subtitle">A celebration of music, art & community – June 15th at Riverside Park</p>
+                <!-- CUSTOMIZE: Change event name and details -->
+                <h1>Join Us for Your Event Name 2025</h1>
+                <p class="hero-subtitle">A celebration of music, art & community – [Date] at [Location]</p>
                 
+                <!-- COUNTDOWN TIMER: Update target date in JavaScript section below -->
                 <div class="countdown">
                     <h3>Event Countdown</h3>
                     <div class="countdown-timer">
                         <div class="countdown-item">
-                            <span class="countdown-number" id="days">20</span>
+                            <span class="countdown-number" id="days">--</span>
                             <span class="countdown-label">Days</span>
                         </div>
                         <div class="countdown-item">
-                            <span class="countdown-number" id="hours">05</span>
+                            <span class="countdown-number" id="hours">--</span>
                             <span class="countdown-label">Hours</span>
                         </div>
                         <div class="countdown-item">
-                            <span class="countdown-number" id="minutes">32</span>
+                            <span class="countdown-number" id="minutes">--</span>
                             <span class="countdown-label">Minutes</span>
                         </div>
                         <div class="countdown-item">
-                            <span class="countdown-number" id="seconds">18</span>
+                            <span class="countdown-number" id="seconds">--</span>
                             <span class="countdown-label">Seconds</span>
                         </div>
                     </div>
                 </div>
                 
+                <!-- CUSTOMIZE: Change button text -->
                 <a href="#rsvp" class="cta-button">RSVP Now</a>
             </div>
         </div>
     </section>
 
-    <!-- Description Section -->
+    <!-- =================================================================
+         DESCRIPTION SECTION
+         CUSTOMIZE: Replace with your event description
+         ================================================================= -->
     <section class="section description">
         <div class="container">
+            <!-- CUSTOMIZE: Change section title -->
             <h2 class="section-title">An Unforgettable Experience Awaits</h2>
             <div class="description-content">
                 <div class="description-text">
-                    <p>Get ready for an extraordinary day of music, art, and community spirit! Harmony Festival brings together local talents, amazing food, and unforgettable experiences for the whole family. Join hundreds of your neighbors for a celebration that showcases the very best of our vibrant community.</p>
+                    <!-- CUSTOMIZE: Replace with your event description -->
+                    <p>Get ready for an extraordinary day of music, art, and community spirit! Your Event Name brings together local talents, amazing food, and unforgettable experiences for the whole family. Join hundreds of your neighbors for a celebration that showcases the very best of our vibrant community.</p>
                     <p>From live performances by acclaimed local artists to interactive art installations and delicious food from our favorite local vendors, this festival promises something magical for everyone.</p>
                 </div>
                 <div class="description-image">
+                    <!-- CUSTOMIZE: Change emoji or replace with actual image -->
                     <span>🎭🎵🎨</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Schedule Section -->
+    <!-- =================================================================
+         SCHEDULE SECTION
+         CUSTOMIZE: Replace with your event schedule
+         ================================================================= -->
     <section class="section schedule">
         <div class="container">
+            <!-- CUSTOMIZE: Change section title -->
             <h2 class="section-title">What's Happening</h2>
             <div class="schedule-grid">
+                <!-- CUSTOMIZE: Replace each schedule item with your event activities -->
                 <div class="schedule-item">
                     <div class="schedule-icon"></div>
                     <div class="schedule-time">🎶 2:00 PM</div>
-                    <div class="schedule-title">Festival Gates Open</div>
-                    <div class="schedule-description">Welcome drinks, vendor booths, and art installations</div>
+                    <div class="schedule-title">Event Gates Open</div>
+                    <div class="schedule-description">Welcome drinks, vendor booths, and installations</div>
                 </div>
                 <div class="schedule-item">
                     <div class="schedule-icon"></div>
                     <div class="schedule-time">🎵 3:00 PM</div>
-                    <div class="schedule-title">Live Music Begins</div>
-                    <div class="schedule-description">The Wildhearts kick off our main stage performances</div>
+                    <div class="schedule-title">Main Activity Begins</div>
+                    <div class="schedule-description">Featured performers kick off the celebration</div>
                 </div>
                 <div class="schedule-item">
                     <div class="schedule-icon"></div>
                     <div class="schedule-time">🍔 4:30 PM</div>
-                    <div class="schedule-title">Food Truck Village</div>
-                    <div class="schedule-description">Local food vendors serving community favorites</div>
+                    <div class="schedule-title">Food & Refreshments</div>
+                    <div class="schedule-description">Local vendors serving community favorites</div>
                 </div>
                 <div class="schedule-item">
                     <div class="schedule-icon"></div>
                     <div class="schedule-time">🎨 5:00 PM</div>
-                    <div class="schedule-title">Interactive Art Zone</div>
-                    <div class="schedule-description">Hands-on workshops and community mural painting</div>
+                    <div class="schedule-title">Interactive Activities</div>
+                    <div class="schedule-description">Hands-on workshops and community activities</div>
                 </div>
                 <div class="schedule-item">
                     <div class="schedule-icon"></div>
                     <div class="schedule-time">🎤 6:30 PM</div>
                     <div class="schedule-title">Keynote Performance</div>
-                    <div class="schedule-description">Special guest Sarah Martinez takes the stage</div>
+                    <div class="schedule-description">Special guest takes center stage</div>
                 </div>
                 <div class="schedule-item">
                     <div class="schedule-icon"></div>
                     <div class="schedule-time">🌟 8:00 PM</div>
                     <div class="schedule-title">Grand Finale</div>
-                    <div class="schedule-description">Community choir and fireworks display</div>
+                    <div class="schedule-description">Community celebration and closing ceremony</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- RSVP Form Section -->
+    <!-- =================================================================
+         RSVP FORM SECTION
+         CUSTOMIZE: Form fields as needed for your event
+         ================================================================= -->
     <section class="section rsvp" id="rsvp">
         <div class="container">
             <h2 class="section-title">Reserve Your Spot</h2>
-            <form class="rsvp-form">
+            <form class="rsvp-form" id="rsvpForm">
+                <div class="success-message" id="successMessage">
+                    Thank you for your RSVP! You will receive a confirmation email shortly.
+                </div>
+                
                 <div class="form-row">
                     <div class="form-group">
-                        <label for="firstName">First Name</label>
+                        <label for="firstName">First Name *</label>
                         <input type="text" id="firstName" name="firstName" required>
                     </div>
                     <div class="form-group">
-                        <label for="lastName">Last Name</label>
+                        <label for="lastName">Last Name *</label>
                         <input type="text" id="lastName" name="lastName" required>
                     </div>
                 </div>
+                
                 <div class="form-group">
-                    <label for="email">Email Address</label>
+                    <label for="email">Email Address *</label>
                     <input type="email" id="email" name="email" required>
                 </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                
                 <div class="form-row">
                     <div class="form-group">
-                        <label for="guests">Number of Guests</label>
+                        <label for="guests">Number of Guests *</label>
                         <select id="guests" name="guests" required>
                             <option value="">Select...</option>
                             <option value="1">Just me</option>
@@ -629,34 +734,45 @@
                             <option value="vegetarian">Vegetarian</option>
                             <option value="vegan">Vegan</option>
                             <option value="gluten-free">Gluten-free</option>
-                            <option value="other">Other (specify in comments)</option>
+                            <option value="other">Other</option>
                         </select>
                     </div>
                 </div>
+                
+                <div class="form-group">
+                    <label for="comments">Special Requests or Comments</label>
+                    <textarea id="comments" name="comments" placeholder="Any accessibility needs, questions, or special requests?"></textarea>
+                </div>
+                
                 <button type="submit" class="cta-button">Reserve My Spot</button>
             </form>
         </div>
     </section>
 
-    <!-- Map Section -->
+    <!-- =================================================================
+         MAP SECTION
+         CUSTOMIZE: Replace with your venue location and details
+         ================================================================= -->
     <section class="section map-section">
         <div class="container">
             <h2 class="section-title">Where to Find Us</h2>
             <div class="map-content">
                 <div class="map-info">
-                    <h3>📍 Brooklyn Bridge Park</h3>
+                    <!-- CUSTOMIZE: Replace with your venue information -->
+                    <h3>📍 Your Venue Name</h3>
                     <p><strong>Address:</strong><br>
-                    334 Furman St<br>
-                    Brooklyn, NY 11201<br>
+                    123 Your Street<br>
+                    Your City, State 12345<br>
                     United States</p>
                     
-                    <p><strong>🚗 Parking:</strong> Paid parking available at nearby lots. Street parking limited on weekends.</p>
+                    <p><strong>🚗 Parking:</strong> Parking details and availability information.</p>
                     
-                    <p><strong>🚌 Public Transit:</strong> Take A/C to High St-Brooklyn Bridge Station (10-minute walk) or F to York St (8-minute walk)</p>
+                    <p><strong>🚌 Public Transit:</strong> Public transportation options and directions.</p>
                     
-                    <p><strong>♿ Accessibility:</strong> Venue is fully wheelchair accessible with dedicated parking spots.</p>
+                    <p><strong>♿ Accessibility:</strong> Accessibility information for your venue.</p>
                 </div>
                 <div class="map-placeholder">
+                    <!-- CUSTOMIZE: Replace the iframe src with your venue's Google Maps embed -->
                     <iframe 
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.426936098593!2d-74.00597948459394!3d40.71278857933058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a316e10d021%3A0x6c0c1d8ed6b01e24!2sBrooklyn%20Bridge%20Park!5e0!3m2!1sen!2sus!4v1621432744123!5m2!1sen!2sus" 
                         width="100%" 
@@ -671,20 +787,28 @@
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- =================================================================
+         FOOTER
+         CUSTOMIZE: Replace with your business information
+         ================================================================= -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <span>© 2025 [Your business name here]. All rights reserved.</span>
+                <!-- CUSTOMIZE: Replace with your business name -->
+                <span>© 2025 [Your Business Name Here]. All rights reserved.</span>
                 <span class="footer-divider">|</span>
-                <span>Website by <a href="https://www.angiewebstudio.com" class="footer-link">Angie Web Studio</a></span>
+                <span>Website by <a href="https://www.angiewebstudio.com" class="footer-link" target="_blank">Angie Web Studio</a></span>
             </div>
         </div>
     </footer>
 
     <script>
-        // Countdown Timer
+        /* =================================================================
+           COUNTDOWN TIMER CONFIGURATION
+           CUSTOMIZE: Change the event date below
+           ================================================================= */
         function updateCountdown() {
+            // CUSTOMIZE: Replace with your event date and time (YYYY-MM-DDTHH:MM:SS format)
             const eventDate = new Date('2025-06-15T14:00:00').getTime();
             const now = new Date().getTime();
             const distance = eventDate - now;
@@ -708,13 +832,77 @@
         setInterval(updateCountdown, 1000);
         updateCountdown();
 
-        // Form submission
-        document.querySelector('.rsvp-form').addEventListener('submit', function(e) {
+        /* =================================================================
+           FORM HANDLING
+           CUSTOMIZE: Integrate with your email service or backend
+           ================================================================= */
+        document.getElementById('rsvpForm').addEventListener('submit', function(e) {
             e.preventDefault();
-            alert('Thank you for your RSVP! You will receive a confirmation email shortly.');
+            
+            // Show success message
+            const successMessage = document.getElementById('successMessage');
+            successMessage.style.display = 'block';
+            
+            // Scroll to success message
+            successMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            
+            // Reset form after showing message
+            setTimeout(() => {
+                this.reset();
+                successMessage.style.display = 'none';
+            }, 5000);
+
+            // CUSTOMIZE: Add your form submission logic here
+            // Example: Send to your backend, Mailchimp, etc.
+            // const formData = new FormData(this);
+            // sendToYourBackend(formData);
         });
 
-        // Smooth scrolling for CTA button
+        /* =================================================================
+           EXAMPLE INTEGRATION FUNCTIONS
+           CUSTOMIZE: Replace with your actual service integration
+           ================================================================= */
+        
+        // Example Mailchimp integration function
+        function sendToMailchimp(formData) {
+            // Replace with your actual Mailchimp endpoint and API key
+            const mailchimpEndpoint = 'YOUR_MAILCHIMP_ENDPOINT_HERE';
+            
+            const data = {
+                'EMAIL': formData.get('email'),
+                'FNAME': formData.get('firstName'),
+                'LNAME': formData.get('lastName'),
+                'PHONE': formData.get('phone'),
+                'GUESTS': formData.get('guests'),
+                'DIETARY': formData.get('dietary'),
+                'COMMENTS': formData.get('comments')
+            };
+            
+            // Send to Mailchimp
+            // fetch(mailchimpEndpoint, {
+            //     method: 'POST',
+            //     headers: {
+            //         'Content-Type': 'application/json',
+            //     },
+            //     body: JSON.stringify(data)
+            // });
+        }
+
+        // Example backend integration function
+        function sendToBackend(formData) {
+            // Replace with your actual backend endpoint
+            const backendEndpoint = 'YOUR_BACKEND_ENDPOINT_HERE';
+            
+            // Send to your backend
+            // fetch(backendEndpoint, {
+            //     method: 'POST',
+            //     body: formData
+            // });
+        }
+
+        /* =================================================================
+           SMOOTH SCROLLING FOR NAVIGATION
+           ================================================================= */
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -726,6 +914,46 @@
                     });
                 }
             });
+        });
+
+        /* =================================================================
+           ACCESSIBILITY ENHANCEMENTS
+           ================================================================= */
+        // Keyboard navigation support
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' && e.target.classList.contains('cta-button')) {
+                e.target.click();
+            }
+        });
+
+        // Focus management for form validation
+        document.querySelectorAll('input[required], select[required]').forEach(input => {
+            input.addEventListener('invalid', function() {
+                this.focus();
+            });
+        });
+
+        /* =================================================================
+           ANIMATION TRIGGERS
+           ================================================================= */
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all sections for fade-in animation
+        document.querySelectorAll('.section').forEach(section => {
+            observer.observe(section);
         });
     </script>
 </body>
